@@ -75,7 +75,7 @@
               @else
               <p class="badge badge-success">Accepte</p>
               @endif
-              <p>{{$serv->created_at}}</p>
+              <p>{{$serv->created_at->format('d/m/Y')}}</p>
             </div>
         @endforeach
        </div>

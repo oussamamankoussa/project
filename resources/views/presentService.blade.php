@@ -167,6 +167,7 @@
             </div>
             <h2>carte visite</h2>
             @if($carte !== null)
+            
               <div class="row">
                 @foreach($carte as $e)
                   

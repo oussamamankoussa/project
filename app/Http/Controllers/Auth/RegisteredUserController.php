@@ -36,7 +36,7 @@ class RegisteredUserController extends Controller
             'name' => ['required', 'string','min:2','max:40','regex:/^[A-Za-z]{2,10}\s[A-Za-z]{2,10}$/'],
             'tel' =>['required', 'string', 'max:10','regex:/^(05|06|07)([0-9]{2}){4}$/'],
             'whatsapp' =>['required', 'string', 'max:10','regex:/^(05|06|07)([0-9]{2}){4}$/'],
-            'profession'  =>['required', 'string', 'max:50'],
+            'profession'  =>['required', 'string', 'max:50','regex:/^[a-z]{2,50}$/'],
             'ville'  =>['required', 'string', 'max:50','regex:/^[a-z]{2,50}$/'],
             'adresse'  =>['required', 'string', 'max:100'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:'.User::class,'regex:/^[a-zA-Z0-9.-_]{3,80}@gmail.com$/'],
